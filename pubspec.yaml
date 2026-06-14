@@ -1,0 +1,105 @@
+name: finalproject
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.6.0
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.2.4
+  dotted_border: ^2.1.0
+  provider: ^6.1.5+1
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.6.12
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+# 👇 THIS PART GENERATES YOUR APP ICON
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icons/app_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/jakarta/
+    - assets/fonts/vietnam/
+    - assets/fonts/liberation/
+    - assets/icons/
+    - assets/audio/
+
+  fonts:
+    - family: Jakarta
+      fonts:
+        - asset: assets/fonts/jakarta/PlusJakartaSans-Regular.ttf
+        - asset: assets/fonts/jakarta/PlusJakartaSans-Italic.ttf
+          style: italic
+        - asset: assets/fonts/jakarta/PlusJakartaSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/jakarta/PlusJakartaSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/jakarta/PlusJakartaSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/jakarta/PlusJakartaSans-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/jakarta/PlusJakartaSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/jakarta/PlusJakartaSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/jakarta/PlusJakartaSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/jakarta/PlusJakartaSans-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/jakarta/PlusJakartaSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/jakarta/PlusJakartaSans-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/jakarta/PlusJakartaSans-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/jakarta/PlusJakartaSans-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+
+    - family: Vietnam
+      fonts:
+        - asset: assets/fonts/vietnam/BeVietnamPro-Regular.ttf
+        - asset: assets/fonts/vietnam/BeVietnamPro-Italic.ttf
+          style: italic
+        - asset: assets/fonts/vietnam/BeVietnamPro-Light.ttf
+          weight: 300
+        - asset: assets/fonts/vietnam/BeVietnamPro-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/vietnam/BeVietnamPro-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/vietnam/BeVietnamPro-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/vietnam/BeVietnamPro-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/vietnam/BeVietnamPro-Black.ttf
+          weight: 900
+
+    - family: Liberation
+      fonts:
+        - asset: assets/fonts/liberation/LiberationSerif-Regular.ttf
+        - asset: assets/fonts/liberation/liberation-serif.bold.ttf
+          weight: 700
